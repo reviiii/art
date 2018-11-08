@@ -2,15 +2,26 @@
 <head>
 <title>Reviiii's art:col</title>
 <style>
+#cf {
+    position: relative;
+    height: 512px;
+    width: 512px;
+}
 img {  
+    position: absolute;
+    left: 0;
+    transition: opacity 1s ease-in-out;
     image-rendering: -moz-crisp-edges;
     image-rendering: -webkit-crisp-edges;
     image-rendering: pixelated;
 }
+#cf img.top:hover {
+    opacity:0;
+}
 </style>
 </head>
 <body>
-<!-- <img src="col_original.png" width="512"> --><img src="col.png" width="512">
+<div id="cf"><img src="col_original.png" width="512"><img src="col.png" width="512" class="top"></div>
 <p>Dit schilderij is gebaseerd op een foto van een coloradokever<br>
 Aantal pixels: 16384<br>
 Aantal kleuren: 5<br>
